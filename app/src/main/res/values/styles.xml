@@ -62,7 +62,6 @@
     <style name="FoulsStyle">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:layout_marginLeft">24dp</item>
         <item name="android:layout_weight">1</item>
         <item name="android:fontFamily">sans-serif-light</item>
         <item name="android:drawableLeft">@drawable/ic_whistle_2520</item>
@@ -73,17 +72,14 @@
         <item name="android:layout_height">match_parent</item>
         <item name="android:layout_weight">1</item>
         <item name="android:fontFamily">sans-serif-light</item>
-        <item name="android:paddingLeft">5dp</item>
         <item name="android:drawableLeft">@drawable/ic_yellow_card_2025</item>
     </style>
 
     <style name="RedsStyle">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:layout_marginRight">24dp</item>
         <item name="android:layout_weight">1</item>
         <item name="android:fontFamily">sans-serif-light</item>
-        <item name="android:paddingLeft">5dp</item>
         <item name="android:drawableLeft">@drawable/ic_red_card</item>
     </style>
 

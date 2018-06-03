@@ -44,6 +44,7 @@
                     <TextView
                         android:id="@+id/home_fouls"
                         style="@style/FoulsStyle"
+                        android:layout_marginLeft="@dimen/foulsMarginLeft"
                         android:text="0"
                         android:textColor="@color/scoresColor"
                         android:textSize="@dimen/statsTextSize" />
@@ -51,6 +52,7 @@
                     <TextView
                         android:id="@+id/home_yellows"
                         style="@style/YellowsStyle"
+                        android:layout_marginLeft="@dimen/yellowsMarginLeft"
                         android:text="0"
                         android:textColor="@color/scoresColor"
                         android:textSize="@dimen/statsTextSize" />
@@ -58,6 +60,7 @@
                     <TextView
                         android:id="@+id/home_reds"
                         style="@style/RedsStyle"
+                        android:layout_marginRight="@dimen/redsMarginRight"
                         android:text="0"
                         android:textColor="@color/scoresColor"
                         android:textSize="@dimen/statsTextSize" />
@@ -136,6 +139,7 @@
                     <TextView
                         android:id="@+id/away_fouls"
                         style="@style/FoulsStyle"
+                        android:layout_marginLeft="@dimen/foulsMarginLeft"
                         android:text="0"
                         android:textColor="@color/scoresColor"
                         android:textSize="@dimen/statsTextSize" />
@@ -143,6 +147,7 @@
                     <TextView
                         android:id="@+id/away_yellows"
                         style="@style/YellowsStyle"
+                        android:layout_marginLeft="@dimen/yellowsMarginLeft"
                         android:text="0"
                         android:textColor="@color/scoresColor"
                         android:textSize="@dimen/statsTextSize" />
@@ -150,6 +155,7 @@
                     <TextView
                         android:id="@+id/away_reds"
                         style="@style/RedsStyle"
+                        android:layout_marginRight="@dimen/redsMarginRight"
                         android:text="0"
                         android:textColor="@color/scoresColor"
                         android:textSize="@dimen/statsTextSize" />
