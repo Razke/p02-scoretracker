@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="buttonMarginBottom">12dp</dimen>
+    <dimen name="buttonMarginLeft">40dp</dimen>
+    <dimen name="buttonMarginRight">40dp</dimen>
+    <dimen name="resetMarginTop">10dp</dimen>
+    <dimen name="resetMarginLeft">40dp</dimen>
+    <dimen name="resetMarginRight">40dp</dimen>
+    <dimen name="homeTeamPadding">16dp</dimen>
+    <dimen name="awayTeamPadding">16dp</dimen>
+    <dimen name="homeTeamText">14sp</dimen>
+    <dimen name="awayTeamText">14sp</dimen>
+    <dimen name="statsMarginBottom">12dp</dimen>
+    <dimen name="scoreTextSize">56sp</dimen>
+    <dimen name="statsTextSize">24sp</dimen>
+    <dimen name="buttonPadding">20dp</dimen>
+</resources>

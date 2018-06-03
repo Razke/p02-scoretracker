@@ -1,18 +1,212 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.raz.p02_scoretracker.MainActivity">
+    android:background="@color/backgroundMain"
+    tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                style="@style/ColumnStyle"
+                android:background="@color/columnHome">
+
+                <EditText
+                    style="@style/HomeTeamName"
+                    android:background="@color/backgroundMain"
+                    android:padding="@dimen/homeTeamPadding"
+                    android:textSize="@dimen/homeTeamText" />
+
+                <TextView
+                    android:id="@+id/home_score"
+                    style="@style/ScoreStyle"
+                    android:paddingTop="8dp"
+                    android:background="@color/backgroundScore"
+                    android:text="0"
+                    android:textColor="@color/scoresColor"
+                    android:textSize="@dimen/scoreTextSize" />
+
+                <LinearLayout
+                    style="@style/Stats"
+                    android:layout_marginBottom="@dimen/statsMarginBottom"
+                    android:background="@color/backgroundScore">
+
+                    <TextView
+                        android:id="@+id/home_fouls"
+                        style="@style/FoulsStyle"
+                        android:text="0"
+                        android:textColor="@color/scoresColor"
+                        android:textSize="@dimen/statsTextSize" />
+
+                    <TextView
+                        android:id="@+id/home_yellows"
+                        style="@style/YellowsStyle"
+                        android:text="0"
+                        android:textColor="@color/scoresColor"
+                        android:textSize="@dimen/statsTextSize" />
+
+                    <TextView
+                        android:id="@+id/home_reds"
+                        style="@style/RedsStyle"
+                        android:text="0"
+                        android:textColor="@color/scoresColor"
+                        android:textSize="@dimen/statsTextSize" />
+
+                </LinearLayout>
+
+                <Button
+                    style="@style/CountButtonStyle"
+                    android:layout_marginBottom="@dimen/buttonMarginBottom"
+                    android:layout_marginLeft="@dimen/buttonMarginLeft"
+                    android:layout_marginRight="@dimen/buttonMarginRight"
+                    android:padding="@dimen/buttonPadding"
+                    android:onClick="addHomeGoal"
+                    android:text="goal!" />
+
+
+                <Button
+                    style="@style/CountButtonStyle"
+                    android:layout_marginBottom="@dimen/buttonMarginBottom"
+                    android:layout_marginLeft="@dimen/buttonMarginLeft"
+                    android:layout_marginRight="@dimen/buttonMarginRight"
+                    android:padding="@dimen/buttonPadding"
+                    android:onClick="addHomeFoul"
+                    android:text="foul" />
+
+                <Button
+                    style="@style/CountButtonStyle"
+                    android:layout_marginBottom="@dimen/buttonMarginBottom"
+                    android:layout_marginLeft="@dimen/buttonMarginLeft"
+                    android:layout_marginRight="@dimen/buttonMarginRight"
+                    android:onClick="addHomeYellow"
+                    android:text="yellow card" />
+
+                <Button
+                    style="@style/CountButtonStyle"
+                    android:layout_marginBottom="@dimen/buttonMarginBottom"
+                    android:layout_marginLeft="@dimen/buttonMarginLeft"
+                    android:layout_marginRight="@dimen/buttonMarginRight"
+                    android:padding="@dimen/buttonPadding"
+                    android:onClick="addHomeRed"
+                    android:text="red card" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:background="@color/separator" />
+
+            <LinearLayout
+                style="@style/ColumnStyle"
+                android:background="@color/columnAway">
+
+                <EditText
+                    style="@style/AwayTeamName"
+                    android:background="@color/backgroundMain"
+                    android:padding="@dimen/awayTeamPadding"
+                    android:textSize="@dimen/awayTeamText" />
+
+                <TextView
+                    android:id="@+id/away_score"
+                    style="@style/ScoreStyle"
+                    android:paddingTop="8dp"
+                    android:background="@color/backgroundScore"
+                    android:text="0"
+                    android:textColor="@color/scoresColor"
+                    android:textSize="@dimen/scoreTextSize" />
+
+                <LinearLayout
+                    style="@style/Stats"
+                    android:layout_marginBottom="@dimen/statsMarginBottom"
+                    android:background="@color/backgroundScore">
+
+                    <TextView
+                        android:id="@+id/away_fouls"
+                        style="@style/FoulsStyle"
+                        android:text="0"
+                        android:textColor="@color/scoresColor"
+                        android:textSize="@dimen/statsTextSize" />
+
+                    <TextView
+                        android:id="@+id/away_yellows"
+                        style="@style/YellowsStyle"
+                        android:text="0"
+                        android:textColor="@color/scoresColor"
+                        android:textSize="@dimen/statsTextSize" />
+
+                    <TextView
+                        android:id="@+id/away_reds"
+                        style="@style/RedsStyle"
+                        android:text="0"
+                        android:textColor="@color/scoresColor"
+                        android:textSize="@dimen/statsTextSize" />
+
+                </LinearLayout>
+
+                <Button
+                    style="@style/CountButtonStyle"
+                    android:layout_marginBottom="@dimen/buttonMarginBottom"
+                    android:layout_marginLeft="@dimen/buttonMarginLeft"
+                    android:layout_marginRight="@dimen/buttonMarginRight"
+                    android:padding="@dimen/buttonPadding"
+                    android:onClick="addAwayGoal"
+                    android:text="goal!" />
+
+
+                <Button
+                    style="@style/CountButtonStyle"
+                    android:layout_marginBottom="@dimen/buttonMarginBottom"
+                    android:layout_marginLeft="@dimen/buttonMarginLeft"
+                    android:layout_marginRight="@dimen/buttonMarginRight"
+                    android:padding="@dimen/buttonPadding"
+                    android:onClick="addAwayFoul"
+                    android:text="foul" />
+
+                <Button
+                    style="@style/CountButtonStyle"
+                    android:layout_marginBottom="@dimen/buttonMarginBottom"
+                    android:layout_marginLeft="@dimen/buttonMarginLeft"
+                    android:layout_marginRight="@dimen/buttonMarginRight"
+                    android:onClick="addAwayYellow"
+                    android:text="yellow card" />
+
+                <Button
+                    style="@style/CountButtonStyle"
+                    android:layout_marginBottom="@dimen/buttonMarginBottom"
+                    android:layout_marginLeft="@dimen/buttonMarginLeft"
+                    android:layout_marginRight="@dimen/buttonMarginRight"
+                    android:padding="@dimen/buttonPadding"
+                    android:onClick="addAwayRed"
+                    android:text="red card" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <Button
+            style="@style/ResetButtonStyle"
+            android:layout_marginTop="@dimen/resetMarginTop"
+            android:layout_marginLeft="@dimen/resetMarginLeft"
+            android:layout_marginRight="@dimen/resetMarginRight"
+            android:onClick="resetMatch"
+            android:text="new match" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
