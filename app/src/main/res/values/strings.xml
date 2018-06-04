@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">p02-scoretracker</string>
+    <string name="app_name">Score Tracker</string>
+
+    <string name="maxCount">2</string>
+
+    <string name="textCount">0</string>
+
+    <string name="goalButton">goal!</string>
+    <string name="foulButton">foul</string>
+    <string name="yellowCardButton">yellow card</string>
+    <string name="redCardButton">red card</string>
+    <string name="newMatchButton">new match</string>
+
 </resources>

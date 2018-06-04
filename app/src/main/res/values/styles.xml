@@ -9,23 +9,6 @@
         <item name="colorButtonNormal">#ffffff</item>
     </style>
 
-    <style name="CountButtonStyle">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-    </style>
-
-    <style name="ResetButtonStyle">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-    </style>
-
-    <style name="ColumnStyle">
-        <item name="android:layout_width">0dp</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_weight">1</item>
-        <item name="android:orientation">vertical</item>
-    </style>
-
     <style name="HomeTeamName">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -44,13 +27,6 @@
         <item name="android:maxLines">1</item>
     </style>
 
-    <style name="Stats">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_gravity">center</item>
-        <item name="android:orientation">horizontal</item>
-    </style>
-
     <style name="ScoreStyle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -59,28 +35,44 @@
         <item name="android:gravity">center</item>
     </style>
 
+    <style name="Stats">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
     <style name="FoulsStyle">
-        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:layout_weight">1</item>
         <item name="android:fontFamily">sans-serif-light</item>
         <item name="android:drawableLeft">@drawable/ic_whistle_2520</item>
     </style>
 
     <style name="YellowsStyle">
-        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:layout_weight">1</item>
         <item name="android:fontFamily">sans-serif-light</item>
         <item name="android:drawableLeft">@drawable/ic_yellow_card_2025</item>
     </style>
 
     <style name="RedsStyle">
-        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:layout_weight">1</item>
         <item name="android:fontFamily">sans-serif-light</item>
         <item name="android:drawableLeft">@drawable/ic_red_card</item>
+    </style>
+
+    <style name="ColumnStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="CountButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
     </style>
 
     <style name="ViewStyle">
@@ -88,5 +80,9 @@
         <item name="android:layout_height">match_parent</item>
     </style>
 
+    <style name="ResetButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
 
 </resources>

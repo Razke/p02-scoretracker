@@ -30,9 +30,10 @@
                 <TextView
                     android:id="@+id/home_score"
                     style="@style/ScoreStyle"
-                    android:paddingTop="8dp"
                     android:background="@color/backgroundScore"
-                    android:text="0"
+                    android:maxLength="@string/maxCount"
+                    android:paddingTop="@dimen/scorePaddingTop"
+                    android:text="@string/textCount"
                     android:textColor="@color/scoresColor"
                     android:textSize="@dimen/scoreTextSize" />
 
@@ -44,24 +45,27 @@
                     <TextView
                         android:id="@+id/home_fouls"
                         style="@style/FoulsStyle"
-                        android:layout_marginLeft="@dimen/foulsMarginLeft"
-                        android:text="0"
+                        android:maxLength="@string/maxCount"
+                        android:text="@string/textCount"
                         android:textColor="@color/scoresColor"
                         android:textSize="@dimen/statsTextSize" />
 
                     <TextView
                         android:id="@+id/home_yellows"
                         style="@style/YellowsStyle"
-                        android:layout_marginLeft="@dimen/yellowsMarginLeft"
-                        android:text="0"
+                        android:layout_width="wrap_content"
+                        android:maxLength="@string/maxCount"
+                        android:paddingLeft="@dimen/yellowsPaddingLeft"
+                        android:paddingRight="@dimen/yellowsPaddingRight"
+                        android:text="@string/textCount"
                         android:textColor="@color/scoresColor"
                         android:textSize="@dimen/statsTextSize" />
 
                     <TextView
                         android:id="@+id/home_reds"
                         style="@style/RedsStyle"
-                        android:layout_marginRight="@dimen/redsMarginRight"
-                        android:text="0"
+                        android:maxLength="@string/maxCount"
+                        android:text="@string/textCount"
                         android:textColor="@color/scoresColor"
                         android:textSize="@dimen/statsTextSize" />
 
@@ -72,9 +76,9 @@
                     android:layout_marginBottom="@dimen/buttonMarginBottom"
                     android:layout_marginLeft="@dimen/buttonMarginLeft"
                     android:layout_marginRight="@dimen/buttonMarginRight"
-                    android:padding="@dimen/buttonPadding"
                     android:onClick="addHomeGoal"
-                    android:text="goal!" />
+                    android:padding="@dimen/buttonPadding"
+                    android:text="@string/goalButton" />
 
 
                 <Button
@@ -82,9 +86,9 @@
                     android:layout_marginBottom="@dimen/buttonMarginBottom"
                     android:layout_marginLeft="@dimen/buttonMarginLeft"
                     android:layout_marginRight="@dimen/buttonMarginRight"
-                    android:padding="@dimen/buttonPadding"
                     android:onClick="addHomeFouls"
-                    android:text="foul" />
+                    android:padding="@dimen/buttonPadding"
+                    android:text="@string/foulButton" />
 
                 <Button
                     style="@style/CountButtonStyle"
@@ -92,17 +96,16 @@
                     android:layout_marginLeft="@dimen/buttonMarginLeft"
                     android:layout_marginRight="@dimen/buttonMarginRight"
                     android:onClick="addHomeYellows"
-                    android:text="yellow card" />
+                    android:text="@string/yellowCardButton" />
 
                 <Button
                     style="@style/CountButtonStyle"
                     android:layout_marginBottom="@dimen/buttonMarginBottom"
                     android:layout_marginLeft="@dimen/buttonMarginLeft"
                     android:layout_marginRight="@dimen/buttonMarginRight"
-                    android:padding="@dimen/buttonPadding"
                     android:onClick="addHomeReds"
-                    android:text="red card" />
-
+                    android:padding="@dimen/buttonPadding"
+                    android:text="@string/redCardButton" />
 
             </LinearLayout>
 
@@ -124,9 +127,10 @@
                 <TextView
                     android:id="@+id/away_score"
                     style="@style/ScoreStyle"
-                    android:paddingTop="8dp"
                     android:background="@color/backgroundScore"
-                    android:text="0"
+                    android:maxLength="@string/maxCount"
+                    android:paddingTop="@dimen/scorePaddingTop"
+                    android:text="@string/textCount"
                     android:textColor="@color/scoresColor"
                     android:textSize="@dimen/scoreTextSize" />
 
@@ -138,24 +142,26 @@
                     <TextView
                         android:id="@+id/away_fouls"
                         style="@style/FoulsStyle"
-                        android:layout_marginLeft="@dimen/foulsMarginLeft"
-                        android:text="0"
+                        android:maxLength="@string/maxCount"
+                        android:text="@string/textCount"
                         android:textColor="@color/scoresColor"
                         android:textSize="@dimen/statsTextSize" />
 
                     <TextView
                         android:id="@+id/away_yellows"
                         style="@style/YellowsStyle"
-                        android:layout_marginLeft="@dimen/yellowsMarginLeft"
-                        android:text="0"
+                        android:maxLength="@string/maxCount"
+                        android:paddingLeft="@dimen/yellowsPaddingLeft"
+                        android:paddingRight="@dimen/yellowsPaddingRight"
+                        android:text="@string/textCount"
                         android:textColor="@color/scoresColor"
                         android:textSize="@dimen/statsTextSize" />
 
                     <TextView
                         android:id="@+id/away_reds"
                         style="@style/RedsStyle"
-                        android:layout_marginRight="@dimen/redsMarginRight"
-                        android:text="0"
+                        android:maxLength="@string/maxCount"
+                        android:text="@string/textCount"
                         android:textColor="@color/scoresColor"
                         android:textSize="@dimen/statsTextSize" />
 
@@ -166,9 +172,9 @@
                     android:layout_marginBottom="@dimen/buttonMarginBottom"
                     android:layout_marginLeft="@dimen/buttonMarginLeft"
                     android:layout_marginRight="@dimen/buttonMarginRight"
-                    android:padding="@dimen/buttonPadding"
                     android:onClick="addAwayGoal"
-                    android:text="goal!" />
+                    android:padding="@dimen/buttonPadding"
+                    android:text="@string/goalButton" />
 
 
                 <Button
@@ -176,9 +182,9 @@
                     android:layout_marginBottom="@dimen/buttonMarginBottom"
                     android:layout_marginLeft="@dimen/buttonMarginLeft"
                     android:layout_marginRight="@dimen/buttonMarginRight"
-                    android:padding="@dimen/buttonPadding"
                     android:onClick="addAwayFouls"
-                    android:text="foul" />
+                    android:padding="@dimen/buttonPadding"
+                    android:text="@string/foulButton" />
 
                 <Button
                     style="@style/CountButtonStyle"
@@ -186,32 +192,29 @@
                     android:layout_marginLeft="@dimen/buttonMarginLeft"
                     android:layout_marginRight="@dimen/buttonMarginRight"
                     android:onClick="addAwayYellows"
-                    android:text="yellow card" />
+                    android:text="@string/yellowCardButton" />
 
                 <Button
                     style="@style/CountButtonStyle"
                     android:layout_marginBottom="@dimen/buttonMarginBottom"
                     android:layout_marginLeft="@dimen/buttonMarginLeft"
                     android:layout_marginRight="@dimen/buttonMarginRight"
-                    android:padding="@dimen/buttonPadding"
                     android:onClick="addAwayReds"
-                    android:text="red card" />
+                    android:padding="@dimen/buttonPadding"
+                    android:text="@string/redCardButton" />
 
             </LinearLayout>
         </LinearLayout>
 
-
         <Button
             style="@style/ResetButtonStyle"
-            android:layout_marginTop="@dimen/resetMarginTop"
             android:layout_marginLeft="@dimen/resetMarginLeft"
             android:layout_marginRight="@dimen/resetMarginRight"
+            android:layout_marginTop="@dimen/resetMarginTop"
             android:onClick="resetMatch"
-            android:text="new match" />
-
+            android:text="@string/newMatchButton" />
 
     </LinearLayout>
-
 
 </ScrollView>
 

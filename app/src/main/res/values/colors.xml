@@ -3,14 +3,19 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
     <color name="backgroundMain">#2C4F92</color>
-    <color name="columnHome">#2C4F92</color>
-    <color name="columnAway">#2C4F92</color>
+
     <color name="backgroundScore">#FFFFFF</color>
     <color name="scoresColor">#000000</color>
+
+    <color name="columnHome">#2C4F92</color>
+    <color name="columnAway">#2C4F92</color>
+
     <color name="goalButtonColor">#ffffff</color>
     <color name="foulButtonColor">#ffffff</color>
     <color name="yellowButtonColor">#ffffff</color>
     <color name="redButtonColor">#ffffff</color>
+
     <color name="separator">#000000</color>
 </resources>
