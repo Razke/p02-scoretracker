@@ -22,4 +22,6 @@
     <dimen name="foulsMarginLeft">32dp</dimen>
     <dimen name="yellowsMarginLeft">8dp</dimen>
     <dimen name="redsMarginRight">30dp</dimen>
+
+    <dimen name="viewMarginTop">16dp</dimen>
 </resources>

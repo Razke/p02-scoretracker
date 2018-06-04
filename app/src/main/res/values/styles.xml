@@ -83,5 +83,10 @@
         <item name="android:drawableLeft">@drawable/ic_red_card</item>
     </style>
 
+    <style name="ViewStyle">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
 
 </resources>

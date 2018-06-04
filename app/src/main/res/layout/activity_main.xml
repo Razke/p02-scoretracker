@@ -83,7 +83,7 @@
                     android:layout_marginLeft="@dimen/buttonMarginLeft"
                     android:layout_marginRight="@dimen/buttonMarginRight"
                     android:padding="@dimen/buttonPadding"
-                    android:onClick="addHomeFoul"
+                    android:onClick="addHomeFouls"
                     android:text="foul" />
 
                 <Button
@@ -91,7 +91,7 @@
                     android:layout_marginBottom="@dimen/buttonMarginBottom"
                     android:layout_marginLeft="@dimen/buttonMarginLeft"
                     android:layout_marginRight="@dimen/buttonMarginRight"
-                    android:onClick="addHomeYellow"
+                    android:onClick="addHomeYellows"
                     android:text="yellow card" />
 
                 <Button
@@ -100,17 +100,16 @@
                     android:layout_marginLeft="@dimen/buttonMarginLeft"
                     android:layout_marginRight="@dimen/buttonMarginRight"
                     android:padding="@dimen/buttonPadding"
-                    android:onClick="addHomeRed"
+                    android:onClick="addHomeReds"
                     android:text="red card" />
 
 
             </LinearLayout>
 
             <View
-                android:layout_width="1dp"
-                android:layout_height="match_parent"
-                android:layout_marginTop="16dp"
-                android:background="@color/separator" />
+                style="@style/ViewStyle"
+                android:layout_marginTop="@dimen/viewMarginTop"
+                android:background="@android:color/darker_gray" />
 
             <LinearLayout
                 style="@style/ColumnStyle"
@@ -178,7 +177,7 @@
                     android:layout_marginLeft="@dimen/buttonMarginLeft"
                     android:layout_marginRight="@dimen/buttonMarginRight"
                     android:padding="@dimen/buttonPadding"
-                    android:onClick="addAwayFoul"
+                    android:onClick="addAwayFouls"
                     android:text="foul" />
 
                 <Button
@@ -186,7 +185,7 @@
                     android:layout_marginBottom="@dimen/buttonMarginBottom"
                     android:layout_marginLeft="@dimen/buttonMarginLeft"
                     android:layout_marginRight="@dimen/buttonMarginRight"
-                    android:onClick="addAwayYellow"
+                    android:onClick="addAwayYellows"
                     android:text="yellow card" />
 
                 <Button
@@ -195,7 +194,7 @@
                     android:layout_marginLeft="@dimen/buttonMarginLeft"
                     android:layout_marginRight="@dimen/buttonMarginRight"
                     android:padding="@dimen/buttonPadding"
-                    android:onClick="addAwayRed"
+                    android:onClick="addAwayReds"
                     android:text="red card" />
 
             </LinearLayout>
