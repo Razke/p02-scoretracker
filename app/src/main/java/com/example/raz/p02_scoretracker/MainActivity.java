@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setRequestedOrientation (ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.activity_main);
+
         displayHomeTeam(0);
         displayHomeFouls(0);
         displayHomeYellows(0);
@@ -40,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
      */
 
     public void addHomeGoal(View v) {
-        scoreHomeTeam = scoreHomeTeam + 1;
+        scoreHomeTeam++;
         displayHomeTeam(scoreHomeTeam);
     }
 
@@ -58,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
      */
 
     public void addHomeFouls(View v) {
-        statHomeFouls = statHomeFouls + 1;
+        statHomeFouls++;
         displayHomeFouls(statHomeFouls);
     }
 
@@ -76,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
      */
 
     public void addHomeYellows(View v) {
-        statHomeYellows = statHomeYellows + 1;
+        statHomeYellows++;
         displayHomeYellows(statHomeYellows);
     }
 
@@ -94,9 +95,8 @@ public class MainActivity extends AppCompatActivity {
      */
 
     public void addHomeReds(View v) {
-        statHomeReds = statHomeReds + 1;
+        statHomeReds++;
         displayHomeReds(statHomeReds);
-
     }
 
     /**
@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
      */
 
     public void addAwayGoal(View v) {
-        scoreAwayTeam = scoreAwayTeam + 1;
+        scoreAwayTeam++;
         displayAwayTeam(scoreAwayTeam);
     }
 
@@ -131,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
      */
 
     public void addAwayFouls(View v) {
-        statAwayFouls = statAwayFouls + 1;
+        statAwayFouls++;
         displayAwayFouls(statAwayFouls);
     }
 
@@ -149,7 +149,7 @@ public class MainActivity extends AppCompatActivity {
      */
 
     public void addAwayYellows(View v) {
-        statAwayYellows = statAwayYellows + 1;
+        statAwayYellows++;
         displayAwayYellows(statAwayYellows);
     }
 
@@ -167,7 +167,7 @@ public class MainActivity extends AppCompatActivity {
      */
 
     public void addAwayReds(View v) {
-        statAwayReds = statAwayReds + 1;
+        statAwayReds++;
         displayAwayReds(statAwayReds);
     }
 
@@ -185,6 +185,7 @@ public class MainActivity extends AppCompatActivity {
      */
 
     public void resetMatch(View v) {
+
         scoreHomeTeam = 0;
         statHomeFouls = 0;
         statHomeYellows = 0;

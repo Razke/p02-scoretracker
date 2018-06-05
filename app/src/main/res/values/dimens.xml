@@ -15,13 +15,14 @@
     <dimen name="yellowsPaddingRight">8dp</dimen>
 
     <dimen name="buttonMarginBottom">12dp</dimen>
-    <dimen name="buttonMarginLeft">40dp</dimen>
-    <dimen name="buttonMarginRight">40dp</dimen>
-    <dimen name="buttonPadding">20dp</dimen>
+    <dimen name="buttonMarginLeft">20dp</dimen>
+    <dimen name="buttonMarginRight">20dp</dimen>
+    <dimen name="buttonPadding">22dp</dimen>
 
     <dimen name="viewMarginTop">16dp</dimen>
 
     <dimen name="resetMarginTop">10dp</dimen>
-    <dimen name="resetMarginLeft">40dp</dimen>
-    <dimen name="resetMarginRight">40dp</dimen>
+    <dimen name="resetMarginLeft">20dp</dimen>
+    <dimen name="resetMarginRight">20dp</dimen>
+    <dimen name="resetPadding">16dp</dimen>
 </resources>

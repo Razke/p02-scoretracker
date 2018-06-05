@@ -96,6 +96,7 @@
                     android:layout_marginLeft="@dimen/buttonMarginLeft"
                     android:layout_marginRight="@dimen/buttonMarginRight"
                     android:onClick="addHomeYellows"
+                    android:padding="@dimen/buttonPadding"
                     android:text="@string/yellowCardButton" />
 
                 <Button
@@ -192,6 +193,7 @@
                     android:layout_marginLeft="@dimen/buttonMarginLeft"
                     android:layout_marginRight="@dimen/buttonMarginRight"
                     android:onClick="addAwayYellows"
+                    android:padding="@dimen/buttonPadding"
                     android:text="@string/yellowCardButton" />
 
                 <Button
@@ -211,6 +213,7 @@
             android:layout_marginLeft="@dimen/resetMarginLeft"
             android:layout_marginRight="@dimen/resetMarginRight"
             android:layout_marginTop="@dimen/resetMarginTop"
+            android:padding="@dimen/resetPadding"
             android:onClick="resetMatch"
             android:text="@string/newMatchButton" />
 
