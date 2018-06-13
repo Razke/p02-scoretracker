@@ -3,7 +3,29 @@
 /local.properties
 /.idea/workspace.xml
 /.idea/libraries
+/.idea/markdown-navigator.xml
 .DS_Store
 /build
 /captures
 .externalNativeBuild
+.navigation
+output.json
+/obj
+
+#built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+
+
+
+

@@ -25,7 +25,8 @@
                     style="@style/HomeTeamName"
                     android:background="@color/backgroundMain"
                     android:padding="@dimen/homeTeamPadding"
-                    android:textSize="@dimen/homeTeamText" />
+                    android:textSize="@dimen/homeTeamText"
+                    android:inputType="textCapWords"/>
 
                 <TextView
                     android:id="@+id/home_score"
@@ -123,7 +124,8 @@
                     style="@style/AwayTeamName"
                     android:background="@color/backgroundMain"
                     android:padding="@dimen/awayTeamPadding"
-                    android:textSize="@dimen/awayTeamText" />
+                    android:textSize="@dimen/awayTeamText"
+                    android:inputType="textCapWords"/>
 
                 <TextView
                     android:id="@+id/away_score"
