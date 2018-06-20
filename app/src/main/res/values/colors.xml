@@ -2,15 +2,19 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#FF5252</color>
 
-    <color name="backgroundMain">#2C4F92</color>
+    <color name="backgroundMain">#3F51B5</color>
 
     <color name="backgroundScore">#FFFFFF</color>
     <color name="scoresColor">#000000</color>
 
-    <color name="columnHome">#2C4F92</color>
-    <color name="columnAway">#2C4F92</color>
+    <color name="columnHome">#3F51B5</color>
+    <color name="columnAway">#3F51B5</color>
 
     <color name="separator">#000000</color>
+
+    <color name="nero">#212121</color>
+
+    <color name="grey">#BDBDBD</color>
 </resources>

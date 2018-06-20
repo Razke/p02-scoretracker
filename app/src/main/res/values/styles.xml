@@ -3,10 +3,10 @@
     <!-- Base application theme. -->
     <style name="Actionbarless" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">#000000</item>
-        <item name="colorPrimaryDark">#000000</item>
-        <item name="colorAccent">#9E9E9E</item>
-        <item name="colorButtonNormal">#ffffff</item>
+        <item name="colorPrimary">#3F51B5</item>
+        <item name="colorPrimaryDark">#303F9F</item>
+        <item name="colorAccent">#FF5252</item>
+        <item name="colorButtonNormal">#FFFFFF</item>
     </style>
 
     <style name="HomeTeamName">
@@ -16,6 +16,8 @@
         <item name="android:gravity">center</item>
         <item name="android:hint">HOME TEAM</item>
         <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/backgroundScore</item>
+        <item name="android:textColorHint">@color/backgroundScore</item>
     </style>
 
     <style name="AwayTeamName">
@@ -25,6 +27,8 @@
         <item name="android:gravity">center</item>
         <item name="android:hint">AWAY TEAM</item>
         <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/backgroundScore</item>
+        <item name="android:textColorHint">@color/backgroundScore</item>
     </style>
 
     <style name="ScoreStyle">
@@ -73,6 +77,7 @@
     <style name="CountButtonStyle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/nero</item>
     </style>
 
     <style name="ViewStyle">
@@ -83,6 +88,7 @@
     <style name="ResetButtonStyle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/nero</item>
     </style>
 
 </resources>

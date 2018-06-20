@@ -11,7 +11,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -24,9 +23,9 @@
                 <EditText
                     style="@style/HomeTeamName"
                     android:background="@color/backgroundMain"
+                    android:inputType="textCapWords"
                     android:padding="@dimen/homeTeamPadding"
-                    android:textSize="@dimen/homeTeamText"
-                    android:inputType="textCapWords"/>
+                    android:textSize="@dimen/homeTeamText" />
 
                 <TextView
                     android:id="@+id/home_score"
@@ -69,7 +68,6 @@
                         android:text="@string/textCount"
                         android:textColor="@color/scoresColor"
                         android:textSize="@dimen/statsTextSize" />
-
                 </LinearLayout>
 
                 <Button
@@ -80,7 +78,6 @@
                     android:onClick="addHomeGoal"
                     android:padding="@dimen/buttonPadding"
                     android:text="@string/goalButton" />
-
 
                 <Button
                     style="@style/CountButtonStyle"
@@ -108,13 +105,12 @@
                     android:onClick="addHomeReds"
                     android:padding="@dimen/buttonPadding"
                     android:text="@string/redCardButton" />
-
             </LinearLayout>
 
             <View
                 style="@style/ViewStyle"
                 android:layout_marginTop="@dimen/viewMarginTop"
-                android:background="@android:color/darker_gray" />
+                android:background="@color/grey" />
 
             <LinearLayout
                 style="@style/ColumnStyle"
@@ -123,9 +119,9 @@
                 <EditText
                     style="@style/AwayTeamName"
                     android:background="@color/backgroundMain"
+                    android:inputType="textCapWords"
                     android:padding="@dimen/awayTeamPadding"
-                    android:textSize="@dimen/awayTeamText"
-                    android:inputType="textCapWords"/>
+                    android:textSize="@dimen/awayTeamText" />
 
                 <TextView
                     android:id="@+id/away_score"
@@ -167,7 +163,6 @@
                         android:text="@string/textCount"
                         android:textColor="@color/scoresColor"
                         android:textSize="@dimen/statsTextSize" />
-
                 </LinearLayout>
 
                 <Button
@@ -178,7 +173,6 @@
                     android:onClick="addAwayGoal"
                     android:padding="@dimen/buttonPadding"
                     android:text="@string/goalButton" />
-
 
                 <Button
                     style="@style/CountButtonStyle"
@@ -206,7 +200,6 @@
                     android:onClick="addAwayReds"
                     android:padding="@dimen/buttonPadding"
                     android:text="@string/redCardButton" />
-
             </LinearLayout>
         </LinearLayout>
 
@@ -215,11 +208,9 @@
             android:layout_marginLeft="@dimen/resetMarginLeft"
             android:layout_marginRight="@dimen/resetMarginRight"
             android:layout_marginTop="@dimen/resetMarginTop"
-            android:padding="@dimen/resetPadding"
             android:onClick="resetMatch"
+            android:padding="@dimen/resetPadding"
             android:text="@string/newMatchButton" />
-
     </LinearLayout>
-
 </ScrollView>
 

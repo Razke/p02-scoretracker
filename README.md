@@ -6,7 +6,7 @@
   # About
   Objective: create a Score Keeper app which gives a user the ability to keep track of the score of two different teams playing a game of your choice.
 
-<img src="https://i.imgur.com/wGse5cP.png" width="300" height="490">
+<img src="https://i.imgur.com/8MklbL6.jpg" width="300" height="490">
 
 ## Resources used in this project
 
@@ -32,9 +32,11 @@
 
 * [Java Operators](http://www.mathcs.emory.edu/~cheung/Courses/170/Syllabus/04/shorthand.html)
 
+* [Material Palette](https://www.materialpalette.com/indigo/red)
+
 * [Mentor review](https://review.udacity.com/#!/reviews/1261568/shared)
 
-* Android Studio Plugins: CodeGlance, Key promoter, Markdown Navigator, Material Theme UI
+* Android Studio Plugins: CodeGlance, Key promoter, Markdown Navigator, Material Theme UI, WIFI ADB ULTIMATE
 
 ## Reflections
 

@@ -1,10 +1,8 @@
 package com.example.raz.p02_scoretracker;
 
-import android.app.Activity;
 import android.content.pm.ActivityInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatDelegate;
 import android.view.View;
 import android.widget.TextView;
 
@@ -23,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setRequestedOrientation (ActivityInfo.SCREEN_ORIENTATION_NOSENSOR);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_NOSENSOR);
         setContentView(R.layout.activity_main);
 
         displayHomeTeam(0);
@@ -39,7 +37,6 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Increase the score for the Home Team by 1 point.
      */
-
     public void addHomeGoal(View v) {
         scoreHomeTeam++;
         displayHomeTeam(scoreHomeTeam);
@@ -48,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Displays the given score for the Home Team.
      */
-
     public void displayHomeTeam(int score) {
         TextView scoreView = findViewById(R.id.home_score);
         scoreView.setText(String.valueOf(score));
@@ -57,7 +53,6 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Increase the Home Fouls stat by 1 point.
      */
-
     public void addHomeFouls(View v) {
         statHomeFouls++;
         displayHomeFouls(statHomeFouls);
@@ -66,7 +61,6 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Displays the Home Fouls stat.
      */
-
     public void displayHomeFouls(int stat) {
         TextView scoreView = findViewById(R.id.home_fouls);
         scoreView.setText(String.valueOf(stat));
@@ -75,7 +69,6 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Increase the Home Yellows stat by 1 point.
      */
-
     public void addHomeYellows(View v) {
         statHomeYellows++;
         displayHomeYellows(statHomeYellows);
@@ -84,7 +77,6 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Displays the Home Yellow stat.
      */
-
     public void displayHomeYellows(int stat) {
         TextView scoreView = findViewById(R.id.home_yellows);
         scoreView.setText(String.valueOf(stat));
@@ -93,7 +85,6 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Increase the Home Reds stat by 1 point.
      */
-
     public void addHomeReds(View v) {
         statHomeReds++;
         displayHomeReds(statHomeReds);
@@ -102,7 +93,6 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Displays the Home Reds stat.
      */
-
     public void displayHomeReds(int stat) {
         TextView scoreView = findViewById(R.id.home_reds);
         scoreView.setText(String.valueOf(stat));
@@ -111,7 +101,6 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Increase the score for the Away Team by 1 point.
      */
-
     public void addAwayGoal(View v) {
         scoreAwayTeam++;
         displayAwayTeam(scoreAwayTeam);
@@ -120,7 +109,6 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Displays the given score for the Away Team.
      */
-
     public void displayAwayTeam(int score) {
         TextView scoreView = findViewById(R.id.away_score);
         scoreView.setText(String.valueOf(score));
@@ -129,7 +117,6 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Increase the Away Fouls stat by 1 point.
      */
-
     public void addAwayFouls(View v) {
         statAwayFouls++;
         displayAwayFouls(statAwayFouls);
@@ -138,7 +125,6 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Displays the Away Fouls stat.
      */
-
     public void displayAwayFouls(int stat) {
         TextView scoreView = findViewById(R.id.away_fouls);
         scoreView.setText(String.valueOf(stat));
@@ -147,7 +133,6 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Increase the Away Yellows stat by 1 point.
      */
-
     public void addAwayYellows(View v) {
         statAwayYellows++;
         displayAwayYellows(statAwayYellows);
@@ -156,7 +141,6 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Displays the Away Yellows stat.
      */
-
     public void displayAwayYellows(int stat) {
         TextView scoreView = findViewById(R.id.away_yellows);
         scoreView.setText(String.valueOf(stat));
@@ -165,7 +149,6 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Increase the Away Reds stat by 1 point.
      */
-
     public void addAwayReds(View v) {
         statAwayReds++;
         displayAwayReds(statAwayReds);
@@ -174,7 +157,6 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Displays the Away Reds stat.
      */
-
     public void displayAwayReds(int stat) {
         TextView scoreView = findViewById(R.id.away_reds);
         scoreView.setText(String.valueOf(stat));
@@ -183,7 +165,6 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Starts a new match with the stats reset.
      */
-
     public void resetMatch(View v) {
 
         scoreHomeTeam = 0;
