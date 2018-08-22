@@ -8,6 +8,13 @@
 
 <img src="https://i.imgur.com/8MklbL6.jpg" width="300" height="490">
 
+This project is about combining various ideas and skills we’ve been practicing throughout the course. They include:
+* Adding button code to your app
+* Updating views
+* Properly scoping variables
+* Finding views by their ID
+
+
 ## Resources used in this project
 
 * [What should be in my .gitignore for an Android Studio project](https://stackoverflow.com/a/17803964/8651044)
